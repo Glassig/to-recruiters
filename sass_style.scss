@@ -1,0 +1,76 @@
+@font-face {
+	font-family: Butler;
+	src: url(Butler_Webfont/butler_regular-webfont.woff);
+}
+
+@font-face {
+	font-family: Butler_bold;
+	src: url(Butler_Webfont/butler_bold-webfont.woff);
+}
+
+@font-face {
+	font-family: Butler_black;
+	src: url(Butler_Webfont/butler_black-webfont.woff);
+}
+
+$green : #82AD7C;
+$green2 : #36755B;
+$red : #ff0101;
+$black : #333;
+$blue : #38838B;
+
+body {
+	height: 100%;
+	width: 100%;
+	background-color: white;
+	color: $black;
+	font-family: 'Playfair Display', serif;
+}
+
+::selection {
+	background-color: $green;
+	color: white;
+}
+
+.content {
+	margin: auto;
+
+	h1 {
+		font-family: Butler_black;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.content {width: 60vw;}
+}
+
+@media only screen and (max-width: 768px) {
+	.content {max-width: 800px;}
+}
+
+#email {
+	border-left: $blue solid;
+	padding-left: 20px;
+
+	span.editable_field {
+		border-bottom: 2px solid $red;
+	}
+}
+
+#copy {
+	width: 30px;
+	height: 30px;
+	padding: 2px;
+	background: none;
+	border: 1px $black solid;
+	box-shadow: 3px 3px 0 $black; 
+
+	&:hover {
+		box-shadow: 0 0 $black;
+	}
+
+	img {
+		width: 26px;
+		height: 26px;
+	}
+}
