@@ -11,3 +11,9 @@ function copy() {
 }
 
 document.querySelector("#copy").addEventListener("click", copy)
+
+if (document.querySelector("#swedish")) {
+	document.querySelector("#swedish").addEventListener("click", () => {window.location.href = "swedish.html"})	
+} else {
+	document.querySelector("#english").addEventListener("click", () => {window.location.href = "index.html"})
+}
