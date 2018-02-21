@@ -48,11 +48,17 @@ body {
 	.content {max-width: 800px;}
 }
 
+.email_and_copy {
+	display: flex;
+	width: 100%;
+}
+
 #email {
 	border-left: $blue solid;
 	padding-left: 20px;
+	width: calc(100% - 36px);
 
-	span.editable_field {
+	.editable_field {
 		border-bottom: 2px solid $red;
 	}
 }
@@ -61,9 +67,10 @@ body {
 	width: 30px;
 	height: 30px;
 	padding: 2px;
+	margin: auto;
 	background: none;
 	border: 1px $black solid;
-	box-shadow: 3px 3px 0 $black; 
+	box-shadow: 3px 3px 0 $blue; 
 
 	&:hover {
 		box-shadow: 0 0 $black;

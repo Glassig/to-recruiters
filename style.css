@@ -29,19 +29,25 @@ body {
 @media only screen and (max-width: 768px) {
   .content {
     max-width: 800px; } }
+.email_and_copy {
+  display: flex;
+  width: 100%; }
+
 #email {
   border-left: #38838B solid;
-  padding-left: 20px; }
-  #email span.editable_field {
+  padding-left: 20px;
+  width: calc(100% - 36px); }
+  #email .editable_field {
     border-bottom: 2px solid #ff0101; }
 
 #copy {
   width: 30px;
   height: 30px;
   padding: 2px;
+  margin: auto;
   background: none;
   border: 1px #333 solid;
-  box-shadow: 3px 3px 0 #333; }
+  box-shadow: 3px 3px 0 #38838B; }
   #copy:hover {
     box-shadow: 0 0 #333; }
   #copy img {
